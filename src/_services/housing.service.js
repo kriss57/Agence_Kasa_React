@@ -2,7 +2,7 @@ import data from '../_utiles/data.json'
 
 
 let getAllHousings = () => {
-    return data.map(housings => housings)
+    return data
 }
 
 let getHousing = (hid) => {
