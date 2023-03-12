@@ -1,0 +1,21 @@
+.Carousel {
+  width: 1240px;
+  height: 415px;
+  border-radius: 25px;
+  position: relative;
+  .arrow-container {
+    display: flex;
+    width: 100%;
+    padding: 40px;
+    justify-content: space-between;
+    top: 30%;
+    position: absolute;
+    align-items: center;
+  }
+  .image {
+    width: 1240px;
+    height: 415px;
+    object-fit: cover;
+    border-radius: 25px;
+  }
+}

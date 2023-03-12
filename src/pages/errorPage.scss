@@ -1,0 +1,30 @@
+.ErrorPage {
+  max-width: 1440px;
+  height: 650px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  .errorZone {
+    height: 300px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    h1 {
+      color: var(--primary);
+      font-weight: 700;
+      font-size: 288px;
+    }
+    p {
+      color: var(--primary);
+      font-weight: 500;
+      font-size: 36px;
+    }
+  }
+  a {
+    color: var(--primary);
+    font-weight: 500;
+    font-size: 18px;
+  }
+}
