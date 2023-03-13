@@ -1,0 +1,13 @@
+.About {
+  //max-width: 1240px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .dropSection {
+    display: flex;
+    flex-direction: column;
+    width: 1023px;
+    margin: auto;
+  }
+}
