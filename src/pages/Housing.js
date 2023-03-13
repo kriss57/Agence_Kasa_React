@@ -27,12 +27,14 @@ const Housing = () => {
   let navigate = useNavigate()
 
   useEffect(() => {
+    const housing = housingService.getHousing(hid)
 
-    if (!housingService.getHousing(hid)) {
+    if (!housing) {
       navigate('../*')
+      return
     }
     if (stopDoubleCall.current === false) {
-      setHousings(housingService.getHousing(hid));
+      setHousings(housing);
     }
     return () => stopDoubleCall.current = true
     // eslint-disable-next-line
