@@ -1,0 +1,14 @@
+.Tag {
+  display: flex;
+  li {
+    display: flex;
+    align-items: center;
+    height: 30px;
+    background: var(--primary);
+    padding: 10px 25px;
+    border-radius: 10px;
+    color: white;
+    font-weight: 500;
+    font-size: 14px;
+  }
+}
