@@ -5,11 +5,8 @@ import arrowLeft from '../_assets/images/left-arrow.png'
 import arrowRight from '../_assets/images/right-arrow.png'
 
 const Carousel = ({ data }) => {
-
-  console.log(data.length);
   const [position, setPosition] = useState(0);
 
-  console.log(position);
   const prevMedia = () => {
     let newPosition = position - 1
     if (newPosition < 0) {
