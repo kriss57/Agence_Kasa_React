@@ -6,8 +6,10 @@ import arrowRight from '../_assets/images/right-arrow.png'
 
 const Carousel = ({ data }) => {
 
+  console.log(data.length);
   const [position, setPosition] = useState(0);
 
+  console.log(position);
   const prevMedia = () => {
     let newPosition = position - 1
     if (newPosition < 0) {
@@ -35,6 +37,7 @@ const Carousel = ({ data }) => {
         <img onClick={prevMedia} className="arrow" src={arrowLeft} alt="" />
         <img onClick={nextMedia} className="arrow" src={arrowRight} alt="" />
       </div>
+      <span className="counter">{position + 1}/{data.length}</span>
       <img className="image" src={data[position]} alt='' />
     </div>
   );
