@@ -2,6 +2,7 @@ import React from "react";
 import Banner from "../components/Banner";
 import Dropdown from "../components/Dropdown";
 
+import './about.scss'
 import image2 from '../_assets/images/banner2.png'
 
 const About = () => {
@@ -15,10 +16,13 @@ const About = () => {
   return (
     <div className="About">
       <Banner image={image2} />
-      <Dropdown title='Fiabilité' description={fiabilityTxt} />
-      <Dropdown title='Respect' description={respectTxt} />
-      <Dropdown title='Service' description={serviceTxt} />
-      <Dropdown title='Sécurité' description={SecurityTxt} />
+      <section className="dropSection">
+        <Dropdown title='Fiabilité' description={fiabilityTxt} />
+        <Dropdown title='Respect' description={respectTxt} />
+        <Dropdown title='Service' description={serviceTxt} />
+        <Dropdown title='Sécurité' description={SecurityTxt} />
+      </section>
+
     </div>
   );
 };

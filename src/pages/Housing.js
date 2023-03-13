@@ -3,6 +3,8 @@ import { useNavigate, useParams } from "react-router-dom";
 import Carousel from "../components/Carousel";
 import Dropdown from "../components/Dropdown";
 import InfoHousing from "../components/InfoHousing";
+import Stars from "../components/Stars";
+import Tag from "../components/Tag";
 
 import { housingService } from "../_services/housing.service";
 import './housing.scss'
@@ -15,6 +17,9 @@ const Housing = () => {
     title: '',
     location: '',
     equipments: [],
+    host: {},
+    tags: [],
+    rating: ''
   });
 
   const stopDoubleCall = useRef(false)
@@ -36,7 +41,18 @@ const Housing = () => {
   return (
     <main className="Housing">
       <Carousel data={housings.pictures} />
-      <InfoHousing title={housings.title} location={housings.location} />
+      <div className="infoSection">
+        <div className="leftInfo">
+          <InfoHousing title={housings.title} location={housings.location} />
+          <Tag tags={housings.tags} />
+        </div>
+        <div className="rightInfo">
+          <p>{housings.host.name}</p>
+          <Stars stars={housings.rating} />
+        </div>
+
+      </div>
+
       <section className="dropSection">
         <Dropdown title='Description' description={housings.description} />
         <Dropdown title='Equipements' description={housings.equipments} />

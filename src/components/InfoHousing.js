@@ -1,6 +1,7 @@
 import React from 'react';
 import './infoHousing.scss'
 
+
 const InfoHousing = ({ title, location }) => {
 
     return (
@@ -9,7 +10,6 @@ const InfoHousing = ({ title, location }) => {
                 <h1>{title}</h1>
                 <p>{location}</p>
             </div>
-
         </div>
     );
 };

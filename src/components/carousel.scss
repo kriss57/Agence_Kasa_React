@@ -10,7 +10,16 @@
     justify-content: space-between;
     top: 30%;
     position: absolute;
-    align-items: center;
+  }
+  .counter {
+    position: absolute;
+    transform: translateX(50%);
+    right: 50%;
+    bottom: 5%;
+    color: white;
+    width: 24px;
+    font-size: 18px;
+    font-weight: 500;
   }
   .image {
     width: 1240px;

@@ -1,5 +1,8 @@
 .InfoHousing {
-  width: 1240px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  //justify-content: space-between;
 
   h1 {
     color: var(--primary);
