@@ -3,8 +3,8 @@ import arrowUp from '../_assets/images/up-arrow.png'
 import './dropdown.scss'
 
 
-const Dropdown = ({ title, description }) => {
-
+const Dropdown = ({ title, description, resize }) => {
+  console.log(title);
   const [isOpen, setIsOpen] = useState(false)
   //const [checkType, setCheckType] = useState(false)
 
@@ -13,12 +13,12 @@ const Dropdown = ({ title, description }) => {
   }
 
   return (
-    <div className="Dropdown">
+    <div className={`Dropdown ${resize ? 'resize' : ''}`} >
       <div className="headerDropdown">
         <p>{title}</p>
         <img className={`arrow ${isOpen ? 'isDown' : 'isUp'}`} onClick={toggleDropdown} src={arrowUp} alt="fleche haut" />
       </div>
-      <div className={`containerDropdown  ${isOpen ? 'isOpen' : 'isClosed'}`} >
+      <div className={`containerDropdown  ${isOpen ? 'isOpen' : 'isClosed'} `} >
         <div className="textContainer">
           {Array.isArray(description) ? (<ul className="descriptionList">
             {
