@@ -1,9 +1,11 @@
 .Dropdown {
   margin-top: 30px;
-  max-width: 1023px;
-  min-width: 582px;
+  width: 1023px;
 }
-
+.resize {
+  max-width: 582px;
+  //min-width: 582px;
+}
 .headerDropdown {
   //width: 582px;
   height: 52px;
@@ -35,11 +37,14 @@
   //justify-content: center;
   .textContainer {
     width: 100%;
-    padding: 20px;
+
     display: flex;
     align-items: center;
     .description {
-      max-width: 500px;
+      width: 100%;
+      margin-left: 15px;
+      margin-right: 15px;
+      text-align: justify;
       //height: 156px;
       line-height: 150%;
       font-weight: 400;
@@ -56,7 +61,7 @@
       margin-bottom: 17px;
       li {
         color: var(--primary);
-
+        padding-left: 20px;
         line-height: 150%;
         font-weight: 400;
         font-style: normal;

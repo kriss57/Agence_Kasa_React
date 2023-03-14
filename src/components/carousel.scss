@@ -1,14 +1,15 @@
 .Carousel {
-  width: 1240px;
+  max-width: 1240px;
   height: 415px;
   border-radius: 25px;
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   .arrow-container {
     display: flex;
-    width: 100%;
-    padding: 40px;
+    width: 95%;
     justify-content: space-between;
-    top: 30%;
     position: absolute;
   }
   .counter {
