@@ -49,15 +49,21 @@ const Housing = () => {
           <Tag tags={housings.tags} />
         </div>
         <div className="rightInfo">
-          <p>{housings.host.name}</p>
+          <div className="hostInfo">
+            <p >
+              {housings.host?.name?.split(' ')[0]}<br />
+              {housings.host?.name?.split(' ')[1]}
+            </p>
+            <img src={housings.host.picture} alt="profil" />
+          </div>
           <Stars stars={housings.rating} />
         </div>
 
       </div>
 
       <section className="dropSection">
-        <Dropdown title='Description' description={housings.description} />
-        <Dropdown title='Equipements' description={housings.equipments} />
+        <Dropdown resize={true} title='Description' description={housings.description} />
+        <Dropdown resize={true} title='Equipements' description={housings.equipments} />
       </section>
 
     </main>
