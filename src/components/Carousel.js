@@ -28,11 +28,19 @@ const Carousel = ({ data }) => {
     return null;
   }
 
+  if (data.length === 1) {
+    return (
+      <div className="Carousel">
+        <img className="image" src={data[position]} alt='' />
+      </div>
+    )
+  }
+
   return (
     <div className="Carousel">
       <div className="arrow-container">
-        <img onClick={prevMedia} className="arrow" src={arrowLeft} alt="" />
-        <img onClick={nextMedia} className="arrow" src={arrowRight} alt="" />
+        <img onClick={prevMedia} className="arrow" src={arrowLeft} alt="retour" />
+        <img onClick={nextMedia} className="arrow" src={arrowRight} alt="suivant" />
       </div>
       <span className="counter">{position + 1}/{data.length}</span>
       <img className="image" src={data[position]} alt='' />
