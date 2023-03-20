@@ -4,6 +4,9 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  @media screen and (max-width: 500px) {
+    height: 400px;
+  }
   .errorZone {
     height: 300px;
     margin-top: 50px;
@@ -11,20 +14,31 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    @media screen and (max-width: 500px) {
+      height: 200px;
+    }
     h1 {
       color: var(--primary);
       font-weight: 700;
       font-size: 288px;
+      @media screen and (max-width: 500px) {
+        font-size: 96px;
+      }
     }
     p {
       color: var(--primary);
       font-weight: 500;
       font-size: 36px;
+      @media screen and (max-width: 500px) {
+        font-size: 18px;
+        width: 198px;
+      }
     }
   }
   a {
     color: var(--primary);
     font-weight: 500;
     font-size: 18px;
+    text-align: center;
   }
 }

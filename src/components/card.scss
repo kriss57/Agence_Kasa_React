@@ -5,9 +5,13 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  background: var(--gray-1);
+  background: var(--white);
   border-radius: 25px;
 
+  @media screen and (max-width: 576px) {
+    padding: 0;
+    background: white;
+  }
   a {
     border-radius: 10px;
     width: 340px;
@@ -16,6 +20,10 @@
     margin-bottom: 60px;
     border-radius: 10px;
     cursor: pointer;
+    @media screen and (max-width: 576px) {
+      width: 335px;
+      height: 255px;
+    }
 
     article {
       position: relative;
@@ -30,6 +38,8 @@
         width: 100%;
         height: 100%;
         transition: 1s transform;
+        @media screen and (max-width: 576px) {
+        }
       }
       p {
         bottom: 10px;

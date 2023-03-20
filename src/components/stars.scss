@@ -2,4 +2,14 @@
   width: 200px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  @media screen and (max-width: 576px) {
+    width: 80px;
+  }
+  .star {
+    @media screen and (max-width: 576px) {
+      width: 15px;
+      height: 15px;
+    }
+  }
 }

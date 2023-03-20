@@ -1,7 +1,11 @@
 .Layout {
-  max-width: 1440px;
+  width: 1440px;
   margin: auto;
-  // display: flex;
-  // justify-content: center;
-  // flex-direction: column;
+  @media screen and (max-width: 500px) {
+    display: flex;
+    flex-direction: column;
+    width: 335px;
+    margin: 0;
+    justify-content: center;
+  }
 }

@@ -30,7 +30,7 @@ const Housing = () => {
     const housing = housingService.getHousing(hid)
 
     if (!housing) {
-      navigate('../*')
+      navigate('../error')
       return
     }
     if (stopDoubleCall.current === false) {

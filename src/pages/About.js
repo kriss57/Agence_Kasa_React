@@ -2,6 +2,7 @@ import React from "react";
 import Banner from "../components/Banner";
 import Dropdown from "../components/Dropdown";
 
+
 import './about.scss'
 import image2 from '../_assets/images/banner2.png'
 
@@ -22,7 +23,6 @@ const About = () => {
         <Dropdown title='Service' description={serviceTxt} />
         <Dropdown title='Sécurité' description={SecurityTxt} />
       </section>
-
     </div>
   );
 };

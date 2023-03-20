@@ -3,6 +3,16 @@
   height: 233px;
   position: relative;
 
+  @media screen and (max-width: 576px) {
+    max-width: 335px;
+    max-height: 111px;
+  }
+  img {
+    @media screen and (max-width: 576px) {
+      max-width: 335px;
+      max-height: 111px;
+    }
+  }
   &:hover {
     img {
       transform: scale(1.1);
@@ -15,6 +25,12 @@
     font-weight: 500;
     font-size: 48px;
     line-height: 142.6%;
+    @media screen and (max-width: 576px) {
+      width: 200px;
+      font-size: 24px;
+      line-height: 24px;
+      left: 30px;
+    }
   }
 }
 .imageContainer {
@@ -38,6 +54,10 @@
   left: 0;
   opacity: 0.3;
   position: absolute;
+  @media screen and (max-width: 576px) {
+    width: 335px;
+    height: 111px;
+  }
 }
 .notVisible {
   display: none;

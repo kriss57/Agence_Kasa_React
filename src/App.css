@@ -1,5 +1,13 @@
 .App {
-  width: 1440px;
+  max-width: 1440px;
   margin: auto;
   background: white;
+  display: flex;
+  height: 100%;
+}
+@media screen and (max-width: 500px) {
+  .App {
+    justify-content: center;
+    margin: 0;
+  }
 }

@@ -1,10 +1,20 @@
 .Dropdown {
   margin-top: 30px;
   width: 1023px;
+  @media screen and (max-width: 996px) {
+    max-width: 650px;
+  }
+  @media screen and (max-width: 576px) {
+    max-width: 335px;
+  }
 }
 .resize {
   max-width: 582px;
   //min-width: 582px;
+
+  @media screen and (max-width: 576px) {
+    max-width: 335px;
+  }
 }
 .headerDropdown {
   //width: 582px;
@@ -17,11 +27,17 @@
   align-items: center;
   padding-left: 20px;
   padding-right: 20px;
+  @media screen and (max-width: 576px) {
+    height: 30px;
+  }
   p {
     color: white;
     font-weight: 500;
     font-style: normal;
     font-size: 18px;
+    @media screen and (max-width: 576px) {
+      font-size: 13px;
+    }
   }
 }
 .containerDropdown {
@@ -30,11 +46,12 @@
   height: auto;
 
   border-radius: 10px;
-  background-color: var(--gray-1);
+  background-color: var(--white);
 
   display: flex;
   flex-direction: column;
   //justify-content: center;
+
   .textContainer {
     width: 100%;
 
@@ -54,6 +71,10 @@
 
       display: flex;
       justify-content: left;
+      @media screen and (max-width: 576px) {
+        line-height: 17px;
+        font-size: 12px;
+      }
     }
     .descriptionList {
       max-width: 500px;
@@ -66,6 +87,10 @@
         font-weight: 400;
         font-style: normal;
         font-size: 18px;
+        @media screen and (max-width: 576px) {
+          line-height: 17px;
+          font-size: 12px;
+        }
       }
     }
   }
@@ -80,6 +105,10 @@
 .arrow {
   cursor: pointer;
   transition: transform 0.2s ease-in-out;
+  @media screen and (max-width: 576px) {
+    width: 15px;
+    height: 9px;
+  }
 }
 .isUp {
   transform: rotate(180deg);

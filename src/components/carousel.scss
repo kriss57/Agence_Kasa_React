@@ -6,11 +6,21 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  @media screen and (max-width: 500px) {
+    max-width: 335px;
+    height: 255px;
+  }
   .arrow-container {
     display: flex;
     width: 95%;
     justify-content: space-between;
     position: absolute;
+    .arrow {
+      @media screen and (max-width: 500px) {
+        width: 12px;
+        height: 20px;
+      }
+    }
   }
   .counter {
     position: absolute;
@@ -23,9 +33,14 @@
     font-weight: 500;
   }
   .image {
-    width: 1240px;
+    width: 100%;
+    //width: 1240px;
     height: 415px;
     object-fit: cover;
     border-radius: 25px;
+    @media screen and (max-width: 500px) {
+      max-width: 335px;
+      height: 255px;
+    }
   }
 }
