@@ -2,7 +2,7 @@
 
 [![React](https://img.shields.io/badge/-React-61DAFB?logo=react&logoColor=white)](https://reactjs.org/)
 
-## Langages et outils
+## Languages and tools
 
 This project was developed using the following technologies:
 
