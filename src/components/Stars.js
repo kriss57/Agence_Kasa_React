@@ -8,9 +8,6 @@ const Stars = ({ stars }) => {
 
     const starsArray = []
     const nbStars = +stars
-    console.log(typeof (nbStars));
-    console.log(nbStars);
-    console.log(starsArray);
 
     for (let i = 1; i <= 5; i++) {
         const star = i <= nbStars ? starImg : emptyStarImg

@@ -10,7 +10,7 @@ const Nav = () => {
         <nav>
             <ul style={{ display: "flex" }}>
                 <li >
-                    <Link to="/home" className={location.pathname === "/home" ? 'isActive' : ''}>Acceuil</Link>
+                    <Link to="/home" className={location.pathname === "/home" ? 'isActive' : ''}>Accueil</Link>
                 </li>
                 <li>
                     <Link to="/about" className={location.pathname === "/about" ? 'isActive' : ''}>A Propos</Link>

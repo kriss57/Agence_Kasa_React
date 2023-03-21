@@ -1,6 +1,9 @@
 .Housing {
   max-width: 1240px;
   margin: auto;
+  @media screen and (max-width: 500px) {
+    width: 335px;
+  }
 }
 .infoSection {
   max-width: 1240px;
@@ -14,6 +17,9 @@
 .dropSection {
   display: flex;
   justify-content: space-between;
+  @media screen and (max-width: 996px) {
+    flex-wrap: wrap;
+  }
   @media screen and (max-width: 500px) {
     flex-direction: column;
     margin-top: -10px;

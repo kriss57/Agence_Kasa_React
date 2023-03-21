@@ -17,20 +17,20 @@ const Card = () => {
   }, []);
 
   return (
-    <div className="Card">
+    <section className="Card">
       {housings.length > 0 ? (
         housings.map((housing) => (
           <Link key={housing.id} to={`/housing/${housing.id}`}>
             <article key={housing.id}>
               <img src={housing.cover} alt={housing.title} />
-              <p>{housing.title}</p>
+              <h2>{housing.title}</h2>
             </article>
           </Link>
         ))
       ) : (<p>Loading...</p>
       )}
 
-    </div>
+    </section>
   );
 };
 

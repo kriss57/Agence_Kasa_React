@@ -11,6 +11,8 @@
   @media screen and (max-width: 576px) {
     padding: 0;
     background: white;
+    margin: auto;
+    justify-content: center;
   }
   a {
     border-radius: 10px;
@@ -23,6 +25,7 @@
     @media screen and (max-width: 576px) {
       width: 335px;
       height: 255px;
+      margin-bottom: 15px;
     }
 
     article {
@@ -41,12 +44,14 @@
         @media screen and (max-width: 576px) {
         }
       }
-      p {
+      h2 {
         bottom: 10px;
         left: 10px;
         color: var(--white);
         position: absolute;
         font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
       }
     }
   }
